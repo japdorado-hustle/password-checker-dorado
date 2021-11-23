@@ -1,0 +1,15 @@
+.result{
+    &__strength{
+        font-size: 1.5rem;
+        font-weight: bolder;
+    }
+
+    &__time-warning,
+    &__suggestions{
+        font-size: 1.4rem;
+    }
+
+    &__suggestions{
+        font-weight: bolder;
+    }
+}
