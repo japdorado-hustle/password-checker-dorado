@@ -10,6 +10,7 @@
         height: 0.5rem;
         margin: 0.2rem;
         border-radius: 1rem;
+        transition: background-color 0.5s ease;
 
         &--active{
             background-color: #D9322C;

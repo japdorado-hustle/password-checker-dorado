@@ -24,7 +24,7 @@ const PasswordChecker = () => {
     useEffect(() => {
         const timeout = setTimeout(() => {
             checkAPI(checkerState.value)
-        }, 1000);
+        }, 800);
         return () => clearTimeout(timeout);
     }, [checkerState.value]);
 
@@ -63,7 +63,7 @@ const PasswordChecker = () => {
     // RETURN
     return (
         <div className={B()}>
-            <input type={mask ? 'password' : 'text'} className={E('input')} onChange={onChange} value={checkerState.value}/>
+            <input type={mask ? 'password' : 'text'} className={E('input')} onChange={onChange} value={checkerState.value} placeholder="Type a password"/>
             <span className={E('mask')} onClick={hideInput}>{mask ? 'SHOW' : 'HIDE'}</span>
             {
                 checkerState.value !== '' ? 
